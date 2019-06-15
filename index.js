@@ -20,6 +20,7 @@ function currentLine(arr) {
       empty.push(arr.indexOf(arr[i]) + 1, '. ', arr[i], ', ');
     }
     
+    
     return 'The line is currently: ' + empty.join('');
   }
 }
