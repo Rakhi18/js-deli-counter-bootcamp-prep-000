@@ -19,7 +19,9 @@ function currentLine(arr) {
     for (var i = 0; i < arr.length; i++) {
       empty.push(arr.indexOf(arr[i]) + 1, '. ', arr[i], ', ');
     }
-    
+    if (empty.endsWith(",")) {
+  empty = empty.substring(0, empty.length() - 1);
+}
     
     return 'The line is currently: ' + empty.join('');
   }
